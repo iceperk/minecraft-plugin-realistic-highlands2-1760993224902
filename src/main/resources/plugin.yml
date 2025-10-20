@@ -1,0 +1,31 @@
+name: RealisticHighlands2
+version: 1.0.0
+main: com.realistic_highlands2.RealisticHighlands2
+api-version: 1.21
+author: PluginGenerator
+description: Tworzy piękne, realistyczne krajobrazy z ogromnymi górami, głębokimi dolinami, rzekami i naturalnymi jeziorami.
+
+commands:
+  rlgen:
+    description: Zarządza ustawieniami generowania świata RealisticHighlands2.
+    permission: realistichighlands2.admin
+    usage: /rlgen <reload | info>
+  rlworld:
+    description: Teleportuje do świata realistycznych gór lub tworzy nowy.
+    permission: realistichighlands2.world
+    usage: /rlworld <create [nazwa]> | <teleport [nazwa]>
+  rlseed:
+    description: Wyświetla lub ustawia seed dla generowanego świata RealisticHighlands2.
+    permission: realistichighlands2.admin
+    usage: /rlseed [set <seed>]
+
+permissions:
+  realistichighlands2.admin:
+    description: Permission for rlgen command
+    default: op
+  realistichighlands2.world:
+    description: Permission for rlworld command
+    default: op
+  realistichighlands2.admin:
+    description: Permission for rlseed command
+    default: op
